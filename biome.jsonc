@@ -4,10 +4,20 @@
         "ultracite/core",
         "ultracite/react"
     ],
+    "files": {
+        "includes": [
+            "!**/routeTree.gen.ts"
+        ]
+    },
+    "formatter": {
+        "indentStyle": "tab",
+        "indentWidth": 2
+    },
     "linter": {
         "rules": {
             "style": {
-                "noMagicNumbers": "off"
+                "noMagicNumbers": "off",
+                "useConsistentTypeDefinitions": "off"
             }
         }
     }
