@@ -42,6 +42,7 @@ type CopyButtonProps = Omit<HTMLMotionProps<"button">, "children" | "onCopy"> &
 		isCopied?: boolean;
 		onCopyChange?: (isCopied: boolean) => void;
 	};
+
 function CopyButton({
 	content,
 	className,

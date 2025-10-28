@@ -21,4 +21,30 @@
     body {
         @apply bg-zinc-950 text-zinc-100 antialiased;
     }
+
+    .shiki {
+        @apply !bg-zinc-800/40;
+    }
+}
+
+@layer base {
+
+    /* Custom scrollbar styling. Thanks @pranathiperii. */
+    div::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    div::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    div::-webkit-scrollbar-thumb {
+        background: var(--border);
+        border-radius: 5px;
+    }
+
+    div {
+        scrollbar-width: thin;
+        scrollbar-color: var(--border) transparent;
+    }
 }
